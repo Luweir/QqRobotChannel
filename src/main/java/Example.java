@@ -1,6 +1,4 @@
-public class example2 {
-
-
+public class Example {
     public static void main(String[] args) {
         AccessInfo accessInfo = new AccessInfo();
         accessInfo.setBotAppId(102006259);

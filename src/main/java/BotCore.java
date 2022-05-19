@@ -39,7 +39,7 @@ public class BotCore {
                 System.exit(1);
             }
             String result = body.string();
-//            log.debug(result);
+            System.out.println(result);
             return JSON.parseObject(result, Gateway.class);
         } catch (Exception e) {
             e.printStackTrace();

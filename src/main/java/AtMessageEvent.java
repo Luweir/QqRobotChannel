@@ -14,4 +14,7 @@ public class AtMessageEvent extends EventObject {
         this.message = message;
     }
 
+    public Message getMessage() {
+        return message;
+    }
 }
