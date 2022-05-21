@@ -8,7 +8,8 @@ Java for qqRobotChannel
 
 # 二、开发流程
 从注册申请机器人到最后部署验收，整体流程如下所示：
-![](https://img-blog.csdnimg.cn/e1b677beaa6a4efd8e1eececcd426342.png)
+![image](https://user-images.githubusercontent.com/45732577/169640723-066edbc4-302e-4bd0-b5f9-85a8d099a04d.png)
+
 
 主要分为三个大的模块：
 1. common 模块：根据频道机器人的接口文档以及各实例的结构信息，将其映射为公用的实体类，以便其它模块调用和处理；
@@ -19,7 +20,8 @@ Java for qqRobotChannel
 
 ## 2.1 common 模块
 common 模块主要包含各种公共的实体类；
-![在这里插入图片描述](https://img-blog.csdnimg.cn/9e1f31ef98e24253a6f3a45f3c2baacb.png)
+![image](https://user-images.githubusercontent.com/45732577/169640728-afc58214-1bc5-42e7-8a88-057eb9c2f11a.png)
+
 
 common 模块主要用于定义所需要的公共实体类 以及 基本方法实现；
 ## 2.2 websocket 模块
@@ -28,7 +30,8 @@ common 模块主要用于定义所需要的公共实体类 以及 基本方法�
 
 websocket 模块主要用于与 websocket 服务端进行通信，同时设置响应事件和事件触发响应动作，健康打卡机器人的核心内容在自定义的 IEventHandler 中；
 ## 2.3 mybatis 模块
-![在这里插入图片描述](https://img-blog.csdnimg.cn/1dae9b75a1974f18ae8de3c45e1a4e19.png) 
+![image](https://user-images.githubusercontent.com/45732577/169640734-e8eb80aa-f6f7-4b4a-8439-00c41afebcfe.png)
+
 
 mybatis 模块主要与 数据库 打交道，包括获取用户状态信息、添加用户状态、更新用户状态等操作；
 ### 2.3.1 数据库表的创建
@@ -133,7 +136,7 @@ UserStateMapper.xml 如下所示：
 </mapper>
 ```
 ## 2.4 环境配置
-![](https://img-blog.csdnimg.cn/0091ee90ca8f4dceb3c4ab3192d4ed68.png)
+![image](https://user-images.githubusercontent.com/45732577/169640745-c512b91c-c50f-45d8-8579-0c5c8f4ba75a.png)
 
 
 - MySQL：数据库（version=5.5.54）；
@@ -215,10 +218,11 @@ CREATE TABLE `user_state`(
 state 主要为 6 位 000000前三位表示 7 次喝水打卡，第四位表示运动打卡，第五位表示视力打卡、第六位表示午睡打卡，当日健康打卡全部完成时，state 值为111111，即最大 state=63；同时，根据state 值的不同可得知当前用户所处的打卡状态！
 
 若当前信息为打卡指令：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/cea055d1bc9543898d8b4193bdca85a4.png)
+![image](https://user-images.githubusercontent.com/45732577/169640753-6315982d-7e94-4bc3-8743-73a9377dcf88.png)
 
 若当前信息为查询指令：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/d9c9df9dca6f4f4dba70675658caf52b.png)
+![image](https://user-images.githubusercontent.com/45732577/169640759-ad46c876-bd12-4d91-88a4-35c9f0f44b59.png)
+
 
 ### 4.2.2 last_modification_date
 最近修改日期字段：
@@ -395,11 +399,10 @@ public void healthPunch(Message message) {
 ```
 # 五、测试
 创建者测试一：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7819c8ac79584124bf81533c512737d3.png)
+![image](https://user-images.githubusercontent.com/45732577/169640770-fffddfb6-ac06-4550-a7b5-9fb7d501cce0.png)
 
 新用户测试二：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/28e29f451ab5425a9e78e6d3c487edab.png)
-
+![image](https://user-images.githubusercontent.com/45732577/169640774-c05b5d2c-9948-42b4-a742-1d37b84ab3c9.png)
 
 # 六、可能遇到的问题
 **1）鉴权成功后，@机器人发送信息，机器人端无法收到信息；**
