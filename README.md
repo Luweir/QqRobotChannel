@@ -4,6 +4,8 @@ Java for qqRobotChannel
 # 一、简介
 健康打卡机器人是基于 QQ频道 的一款简单打卡工具，它主要采用 Java-WebSocket、MyBatis 以及 MySQL 等技术，支持用户查看打卡规则、查询打卡状态，执行某一类型的打卡操作以及查看持续打卡天数；打卡内容包括：7次喝水打卡、1次运动打卡、1次视力打卡、1次午睡打卡，用户须全部完成上述 10 次打卡即视为当日健康打卡完成！
 
+注：Java 中 对频道机器人 API 的使用参考 → https://github.com/xiaoye-bot/qqbot-sdk
+
 # 二、开发流程
 从注册申请机器人到最后部署验收，整体流程如下所示：
 ![](https://img-blog.csdnimg.cn/e1b677beaa6a4efd8e1eececcd426342.png)
