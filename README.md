@@ -23,7 +23,8 @@ common 模块主要包含各种公共的实体类；
 
 common 模块主要用于定义所需要的公共实体类 以及 基本方法实现；
 ## 2.2 websocket 模块
-![在这里插入图片描述](https://img-blog.csdnimg.cn/83f5e21cb0874873b2cbc92404d572ea.png)
+![image](https://user-images.githubusercontent.com/45732577/169640677-21351012-bd25-4bff-ae95-2015c14e4fae.png)
+
 
 websocket 模块主要用于与 websocket 服务端进行通信，同时设置响应事件和事件触发响应动作，健康打卡机器人的核心内容在自定义的 IEventHandler 中；
 ## 2.3 mybatis 模块
