@@ -5,70 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="121f5ce9-bea0-42d8-b8a7-4745e8f8fcf1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/UserStateMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/UserStateMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/UserState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/MyBatisUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/websocker/EventHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/websocker/IEventHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dao/UserStateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50c5cb05-a61b-43c6-bb27-710aad80f3c9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/50c5cb05-a61b-43c6-bb27-710aad80f3c9.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QqRobotChannel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/QqRobotChannel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AccessInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/AccessInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ApiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/ApiManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AtMessageEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/AtMessageEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BaseApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/BaseApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BotCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/BotCore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EventHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Example.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Gateway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Hello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IEventHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Identify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Identify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Intent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Intent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MessageApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/MessageApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Payload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Payload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Ready.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Ready.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserMessageEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/UserMessageEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestPython.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AccessInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ApiManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AtMessageEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BaseApi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BotCore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Event$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Event.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EventHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gateway$SessionStartLimit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gateway.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Hello.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/IEventHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Identify.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Intent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MessageApi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Payload.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Ready.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UserMessageEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WsClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/example.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/example2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestPython.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/AccessInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/AccessInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/BaseApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/BaseApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/MessageApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/MessageApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserStateMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserStateMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pojo/UserState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pojo/UserState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/websocker/AtMessageEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/AtMessageEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/websocker/BotCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/BotCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/websocker/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/websocker/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/EventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/websocker/Example.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/websocker/IEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/IEventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/websocker/UserMessageEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/UserMessageEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/BaseApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/BaseApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/MessageApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/MessageApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserStateMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/UserStateMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pojo/UserState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pojo/UserState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/websocker/AtMessageEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/websocker/AtMessageEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/websocker/BotCore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/websocker/Event$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/websocker/Event$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/websocker/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/websocker/Event.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/websocker/EventHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/websocker/EventHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/websocker/Example.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/websocker/IEventHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/websocker/IEventHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/websocker/UserMessageEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/websocker/UserMessageEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestDemo.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +78,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunManager" selected="Application.TestDemo">
     <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -201,6 +167,7 @@
       <workItem from="1652969939476" duration="38000" />
       <workItem from="1652970899794" duration="9378000" />
       <workItem from="1653053137771" duration="19958000" />
+      <workItem from="1653093119225" duration="13689000" />
     </task>
     <servers />
   </component>
@@ -218,5 +185,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

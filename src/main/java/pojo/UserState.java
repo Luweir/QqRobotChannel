@@ -4,11 +4,11 @@ import java.sql.Date;
 import java.util.HashMap;
 
 public class UserState {
-    public String id;
-    public int state;
-    public Date lastModificationDate;
-    public Date lastFinishDate;
-    public int contClockDaysCount;
+    private String id;
+    private int state;
+    private Date lastModificationDate;
+    private Date lastFinishDate;
+    private int contClockDaysCount;
 
     @Override
     public String toString() {

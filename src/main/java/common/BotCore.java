@@ -1,9 +1,13 @@
-package websocker;
+package common;
 
 import com.alibaba.fastjson.*;
 import common.AccessInfo;
 import common.ApiManager;
 import okhttp3.*;
+import websocker.Client;
+import websocker.EventHandler;
+import websocker.Gateway;
+import websocker.Intent;
 
 import java.net.URI;
 import java.util.*;

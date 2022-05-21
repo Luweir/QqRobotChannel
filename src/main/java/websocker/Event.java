@@ -7,7 +7,6 @@ import java.util.Arrays;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import common.Message;
 import common.User;
 import org.java_websocket.enums.ReadyState;
 
@@ -67,7 +66,6 @@ public class Event {
                 }
                 AtMessageEvent atMessageEvent = new AtMessageEvent(this, atMessage);
                 client.getEventHandler().onAtMessage(atMessageEvent);
-
                 break;
             // 发送消息事件，代表频道内的全部消息，而不只是 at 机器人的消息。内容与 AT_MESSAGE_CREATE 相同
             case "MESSAGE_CREATE":

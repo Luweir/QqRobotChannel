@@ -1,4 +1,6 @@
-package common;
+package websocker;
+
+import common.User;
 
 public class Message {
     /**

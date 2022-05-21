@@ -1,7 +1,6 @@
 package websocker;
 
 import common.ApiManager;
-import common.Message;
 import common.User;
 import dao.UserStateMapper;
 import org.apache.ibatis.session.SqlSession;
@@ -32,13 +31,11 @@ public class IEventHandler extends EventHandler {
         Message message = atMessageEvent.getMessage();
         String content = message.getContent();
         User author = message.getAuthor();
-        System.out.printf("消息内容：%s \n", content);
-        String replyContent = "<@!" + author.getId() + ">";
         switch (content) {
             case "查询状态":
                 queryState(message);
                 break;
-            case "打卡须知":
+            case "打卡规则":
                 instructions(message);
                 break;
             default:
@@ -51,7 +48,7 @@ public class IEventHandler extends EventHandler {
         String messageId = message.getId();
         User author = message.getAuthor();
         String replyContent = "<@!" + author.getId() + ">";
-        replyContent += "打卡规则：每日须进行7次喝水打卡，1次运动打卡，1次视力打卡，1次午睡打卡，@本机器人并发送相应打卡信息即可完成打卡。\n比如：@xxx 喝水打卡\n注意：不允许同一时间打卡多项！";
+        replyContent += "打卡规则：每日须进行7次喝水打卡，1次运动打卡，1次视力打卡，1次午睡打卡，@本机器人并发送相应打卡指令即可完成打卡。\n比如：@xxx 喝水打卡\n注意：不允许同一时间打卡多项！";
         api.getMessageApi().sendMessage(channelId, replyContent, messageId);
     }
 
@@ -68,8 +65,20 @@ public class IEventHandler extends EventHandler {
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
         UserStateMapper mapper = sqlSession.getMapper(UserStateMapper.class);
         UserState userState = mapper.getUserStateById(author.getId());
+        // 如果是新用户，则创建
+        if (userState == null) {
+            HashMap<String, Object> hashMap = new HashMap<>();
+            hashMap.put("id", author.getId());
+            hashMap.put("state", 0);
+            hashMap.put("lastModificationDate", new java.sql.Date(0));
+            hashMap.put("lastFinishDate", new java.sql.Date(0));
+            hashMap.put("contClockDaysCount", 0);
+            mapper.addUserState(hashMap);
+            sqlSession.commit();
+            userState = mapper.getUserStateById(author.getId());
+        }
         if (userState.getState() == 63) {
-            replyContent += "\n恭喜！您今天的健康打卡全部完成；";
+            replyContent += "\n恭喜！您今天的健康打卡全部完成。";
         } else {
             replyContent += "\n您当日还剩";
             if (((userState.getState() >> 3) & 7) < 7) {
@@ -99,6 +108,7 @@ public class IEventHandler extends EventHandler {
         String content = message.getContent();
         String messageId = message.getId();
         User author = message.getAuthor();
+        SqlSession sqlSession = MyBatisUtils.getSqlSession();
         try {
             int deltaState = 0;
             String replyContent = "<@!" + author.getId() + ">";
@@ -119,11 +129,10 @@ public class IEventHandler extends EventHandler {
                     deltaState = 0;
             }
             if (deltaState == 0) {
-                replyContent += "输入有误,请重新打卡！";
+                replyContent += "输入有误，请重新输入指令！";
                 api.getMessageApi().sendMessage(channelId, replyContent, messageId);
                 return;
             }
-            SqlSession sqlSession = MyBatisUtils.getSqlSession();
             UserStateMapper mapper = sqlSession.getMapper(UserStateMapper.class);
             UserState userState = mapper.getUserStateById(author.getId());
             java.sql.Date todayDate = new java.sql.Date(new Date().getTime());
@@ -146,7 +155,6 @@ public class IEventHandler extends EventHandler {
             if ((((preState >> 3) & 7) == 7 && deltaState == 8) || (((preState >> 2) & 1) == 1 && deltaState == 4)
                     || (((preState >> 1) & 1) == 1 && deltaState == 2) || ((preState & 1) == 1 && deltaState == 1)) {
                 replyContent += "您今天的" + content + "已全部完成，请不要重复打卡！";
-//                System.out.println(replyContent);
                 api.getMessageApi().sendMessage(channelId, replyContent, messageId);
                 return;
             }
@@ -164,7 +172,7 @@ public class IEventHandler extends EventHandler {
                 }
                 userState.setLastFinishDate(todayDate);
                 replyContent += "\n恭喜！您今天的健康打卡全部完成；\n 您已累计健康打卡" + userState.getContClockDaysCount() + "天！";
-                System.out.println(replyContent);
+//                System.out.println(replyContent);
             } else {
                 replyContent += "\n您当日还剩";
                 if (((userState.getState() >> 3) & 7) < 7) {
@@ -182,11 +190,13 @@ public class IEventHandler extends EventHandler {
             }
             mapper.updateUserState(userState.toMap());
             sqlSession.commit();
-            System.out.println("更新成功");
+//            System.out.println("更新成功");
             api.getMessageApi().sendMessage(channelId, replyContent, messageId);
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("发生异常");
+        } finally {
+            sqlSession.close();
         }
     }
 }

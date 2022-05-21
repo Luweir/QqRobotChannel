@@ -1,14 +1,9 @@
 package websocker;
 
-import common.Message;
-
 import java.util.EventObject;
 
 /**
- * 艾特消息事件
- *
- * @author 真心
- * @since 2021/12/9 12:08
+ * 艾特 消息事件
  */
 public class AtMessageEvent extends EventObject {
     private final Message message;

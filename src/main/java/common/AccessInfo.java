@@ -11,7 +11,7 @@ public class AccessInfo {
     public AccessInfo() {
     }
 
-    // 是否使用沙箱模式
+    // Whether to use sandbox mode
     private Boolean useSandBoxMode = false;
 
     public AccessInfo(Integer botAppId, String botToken) {
@@ -58,7 +58,7 @@ public class AccessInfo {
     }
 
 
-    //使用沙箱模式
+    // Use sandbox mode
     public void useSandBoxMode() {
         this.useSandBoxMode = true;
     }

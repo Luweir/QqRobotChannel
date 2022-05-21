@@ -26,5 +26,6 @@
             last_modification_date=#{lastModificationDate},
             last_finish_date=#{lastFinishDate},
             cont_clock_days_count=#{contClockDaysCount}
+        where id = #{id}
     </update>
 </mapper>

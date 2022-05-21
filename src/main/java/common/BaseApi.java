@@ -10,7 +10,7 @@ import okio.Buffer;
 import java.io.IOException;
 import java.util.*;
 
-public abstract class BaseApi {
+public class BaseApi {
     private final String api;
     private final String token;
 

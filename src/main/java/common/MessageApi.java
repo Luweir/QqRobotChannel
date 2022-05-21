@@ -1,12 +1,14 @@
 package common;
 
 import common.AccessInfo;
+import common.BaseApi;
+import websocker.Message;
 
 import java.util.*;
 
 public class MessageApi extends BaseApi {
 
-    protected MessageApi(AccessInfo accessInfo) {
+    public MessageApi(AccessInfo accessInfo) {
         super(accessInfo);
     }
 
@@ -16,7 +18,7 @@ public class MessageApi extends BaseApi {
      * @param channelId 子频道ID
      * @param content   文本内容
      * @param messageId 要回复的消息ID
-     * @return {@link Message} 对象
+     * @return Message 对象
      */
     public Message sendMessage(String channelId, String content, String messageId) {
         Map<String, Object> data = new HashMap<String, Object>();

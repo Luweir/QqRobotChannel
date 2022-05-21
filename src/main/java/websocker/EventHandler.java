@@ -24,9 +24,6 @@ public class EventHandler {
         this.removeAt = removeAt;
     }
 
-    /**
-     * 是否去除消息中的@机器人
-     */
     private boolean removeAt = true;
 
     protected void onError(Exception e) {

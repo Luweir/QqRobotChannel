@@ -1,6 +1,6 @@
 import common.AccessInfo;
 import common.ApiManager;
-import websocker.BotCore;
+import common.BotCore;
 import websocker.IEventHandler;
 
 public class TestDemo {
@@ -14,6 +14,5 @@ public class TestDemo {
         IEventHandler handler = new IEventHandler(api);
         bot.setEventHandler(handler);
         bot.start();
-
     }
 }
