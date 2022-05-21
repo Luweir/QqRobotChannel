@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace 绑定一个对于的Dao/Mapper接口-->
+<mapper namespace="dao.UserStateMapper">
+    <!--处理 数据库字段 与 JavaBean 的映射-->
+    <resultMap id="userStateResultMap" type="pojo.UserState">
+        <result property="lastModificationDate" column="last_modification_date"/>
+        <result property="lastFinishDate" column="last_finish_date"/>
+        <result property="contClockDaysCount" column="cont_clock_days_count"/>
+    </resultMap>
+    <!--id 对应方法名  resultType 返回类型，只写集合中的类名-->
+    <select id="getUserStateById" parameterType="String" resultMap="userStateResultMap">
+        select *
+        from robot.user_state
+        where id = #{id};
+    </select>
+    <insert id="addUserState" parameterType="map">
+        insert into robot.user_state(id, state, last_modification_date, last_finish_date, cont_clock_days_count)
+            VALUE (#{id}, #{state}, #{lastModificationDate}, #{lastFinishDate}, #{contClockDaysCount})
+    </insert>
+    <update id="updateUserState" parameterType="map">
+        update robot.user_state
+        set state=#{state},
+            last_modification_date=#{lastModificationDate},
+            last_finish_date=#{lastFinishDate},
+            cont_clock_days_count=#{contClockDaysCount}
+    </update>
+</mapper>

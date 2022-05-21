@@ -5,45 +5,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="121f5ce9-bea0-42d8-b8a7-4745e8f8fcf1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_4_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_2_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_java_websocket_Java_WebSocket_1_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_4_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UserMessageEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestPython.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__me_zhenxin_qqbot_logging_1_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_java_websocket_Java_WebSocket_1_3_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/UserStateMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/UserStateMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/UserState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/MyBatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websocker/EventHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websocker/IEventHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dao/UserStateTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QqRobotChannel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/QqRobotChannel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AtMessageEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AtMessageEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BotCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BotCore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Identify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Identify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Ready.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Ready.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Example.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/QqRobotChannel.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WsClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WsClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/example.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/example.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AccessInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/AccessInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ApiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/ApiManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AtMessageEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/AtMessageEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BaseApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/BaseApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BotCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/BotCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EventHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Example.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Gateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IEventHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Identify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Identify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Intent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Intent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MessageApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/MessageApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Payload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Payload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Ready.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/Ready.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserMessageEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocker/UserMessageEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestPython.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AccessInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ApiManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AtMessageEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BaseApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BotCore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Event$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Event.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EventHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gateway$SessionStartLimit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gateway.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Hello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/IEventHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Identify.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Intent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MessageApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Payload.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Ready.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UserMessageEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WsClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/example.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/example2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestPython.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +78,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="29NIzjVXeUmQsd5WHkKiLikHIer" />
   <component name="ProjectLevelVcsManager">
@@ -69,35 +103,87 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JavaFile/SpringStudy/mybatis-01" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
   </component>
-  <component name="RunManager" selected="Application.example2">
-    <configuration name="TestPython" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestPython" />
+  <component name="RunManager" selected="Application.TestDemo">
+    <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="websocker.Example" />
       <module name="QqRobotChannel" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="example2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="example2" />
+    <configuration name="TestDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestDemo" />
       <module name="QqRobotChannel" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserStateTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QqRobotChannel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.UserStateTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserStateTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QqRobotChannel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.UserStateTest" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserStateTest.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QqRobotChannel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.UserStateTest" />
+      <option name="METHOD_NAME" value="testSelect" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.example2" />
-        <item itemvalue="Application.TestPython" />
+        <item itemvalue="Application.TestDemo" />
+        <item itemvalue="JUnit.UserStateTest.testSelect" />
+        <item itemvalue="JUnit.UserStateTest.testInsert" />
+        <item itemvalue="JUnit.UserStateTest.test3" />
+        <item itemvalue="Application.Example" />
       </list>
     </recent_temporary>
   </component>
@@ -114,6 +200,7 @@
       <updated>1652969938197</updated>
       <workItem from="1652969939476" duration="38000" />
       <workItem from="1652970899794" duration="9378000" />
+      <workItem from="1653053137771" duration="19958000" />
     </task>
     <servers />
   </component>
@@ -130,5 +217,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
