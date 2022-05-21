@@ -27,7 +27,7 @@ common 模块主要用于定义所需要的公共实体类 以及 基本方法�
 
 websocket 模块主要用于与 websocket 服务端进行通信，同时设置响应事件和事件触发响应动作，健康打卡机器人的核心内容在自定义的 IEventHandler 中；
 ## 2.3 mybatis 模块
-![在这里插入图片描述](https://img-blog.csdnimg.cn/1dae9b75a1974f18ae8de3c45e1a4e19.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/1dae9b75a1974f18ae8de3c45e1a4e19.png) 
 
 mybatis 模块主要与 数据库 打交道，包括获取用户状态信息、添加用户状态、更新用户状态等操作；
 ### 2.3.1 数据库表的创建
