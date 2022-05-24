@@ -112,22 +112,37 @@ public class IEventHandler extends EventHandler {
         try {
             int deltaState = 0;
             String replyContent = "<@!" + author.getId() + ">";
-            switch (content) {
-                case "喝水打卡":
-                    deltaState = (1 << 3);
-                    break;
-                case "运动打卡":
-                    deltaState = (1 << 2);
-                    break;
-                case "视力打卡":
-                    deltaState = (1 << 1);
-                    break;
-                case "午睡打卡":
-                    deltaState = 1;
-                    break;
-                default:
-                    deltaState = 0;
+            if (content.contains("喝水打卡")) {
+                content="喝水打卡";
+                deltaState = (1 << 3);
+            } else if (content.contains("运动打卡")) {
+                content="运动打卡";
+                deltaState = (1 << 2);
+            } else if (content.contains("视力打卡")) {
+                content="视力打卡";
+                deltaState = (1 << 1);
+            } else if (content.contains("午睡打卡")) {
+                content="午睡打卡";
+                deltaState = 1;
+            } else {
+                deltaState = 0;
             }
+//            switch (content) {
+//                case "喝水打卡":
+//                    deltaState = (1 << 3);
+//                    break;
+//                case "运动打卡":
+//                    deltaState = (1 << 2);
+//                    break;
+//                case "视力打卡":
+//                    deltaState = (1 << 1);
+//                    break;
+//                case "午睡打卡":
+//                    deltaState = 1;
+//                    break;
+//                default:
+//                    deltaState = 0;
+//            }
             if (deltaState == 0) {
                 replyContent += "输入有误，请重新输入指令！";
                 api.getMessageApi().sendMessage(channelId, replyContent, messageId);
